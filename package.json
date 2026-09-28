@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "vite --host 0.0.0.0",
     "build": "tsc --noEmit && vite build",
+    "build:pages": "tsc --noEmit && VITE_BASE_PATH=/TBA vite build --base /TBA/ && cp dist/index.html dist/404.html && touch dist/.nojekyll",
     "preview": "vite preview --host 0.0.0.0"
   },
   "dependencies": {

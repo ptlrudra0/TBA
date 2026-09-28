@@ -4,7 +4,7 @@ An interactive research demo for The Black Archive's Smart India Hackathon (SIH)
 
 **This is a simulation, not a connected receiver or a trained navigation model.** Readings, routes, uncertainty and AI outputs are synthetic and generated in the browser. Do not use the demo for navigation or safety decisions.
 
-Live hosted preview: https://files.instinct.com/file-01M3EFR4BK4N9FZ5WB51ZZ5TH1
+Live demo: https://ptlrudra0.github.io/TBA/
 
 ## What you can explore
 
@@ -35,7 +35,13 @@ npm run build
 npm run preview
 ```
 
-The Vite build has been checked with TypeScript. The source in this repository uses React Router for standalone local hosting. The linked hosted File uses its own routing adapter, so the two builds have the same UI and simulation but use different routing wrappers. If deploying this standalone build behind a static host, configure a fallback from unknown routes to `index.html` so direct links to `/live`, `/analytics`, `/system` and `/about` work.
+For a GitHub Pages production build:
+
+```sh
+npm run build:pages
+```
+
+The Vite build has been checked with TypeScript. The source in this repository uses React Router for standalone local hosting. GitHub Pages deploys this project under `/TBA/`. The Vite base path and React Router basename are set for that address. `npm run build:pages` also copies the entry page to `404.html`, so direct links to the dashboard routes load on GitHub Pages. For another host or a root-domain deployment, adjust `VITE_BASE_PATH` and the Vite `--base` argument together.
 
 ## Project structure
 
