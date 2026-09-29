@@ -939,3 +939,15 @@ html,body,#root{background:#000!important}
  .drn .shell-nav-row .universal-nav a[aria-current="page"]{background:#a9b9ef!important;color:#0b1018!important;border-radius:999px}
  .landing-top .universal-nav-landing a,.drn .shell-nav-row .universal-nav a{min-width:0;overflow:visible!important;white-space:nowrap}
 }
+/* Controls remain readable when expanded, but subordinate to the live map. */
+.drn .simpanel .scen{background:#0c0e12!important;color:#e2e5ed!important;border:1px solid #242731!important;border-radius:4px!important}
+.drn .simpanel .scen-on{background:#1b2235!important;border-color:#7d8fcb!important}
+.drn .simpanel .scen-name,.drn .simpanel .switch-label{color:#e2e5ed!important}
+.drn .simpanel .scen-desc,.drn .simpanel .scen-note,.drn .simpanel .sim-hint,.drn .simpanel .switch-label small{color:#a9acb5!important}
+.drn .simpanel .scen-name em{color:#a9b9ef!important}
+.drn .simpanel .sim-row-label,.drn .simpanel .sim-ticks{color:#a9acb5!important}
+.drn .simpanel .btn{background:#17191f!important;color:#e3e5eb!important;border:1px solid #30343f!important;border-radius:4px!important;box-shadow:none!important}
+.drn .simpanel .btn:hover:not(:disabled){background:#272b34!important;color:#fff!important}
+.drn .simpanel .btn-primary{background:#a9b9ef!important;color:#10131d!important;border-color:#a9b9ef!important}
+.drn .simpanel .btn-primary:hover:not(:disabled){background:#c0cbf3!important;color:#10131d!important}
+.drn .simpanel .btn:disabled{opacity:.4}
